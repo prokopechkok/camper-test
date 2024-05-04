@@ -1,0 +1,121 @@
+.filterModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.filterModal.visible {
+  display: flex;
+}
+.modalContent {
+  display: flex;
+  border-radius: 20px;
+  padding: 40px;
+  width: 982px;
+  height: 720px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--white);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: start;
+  align-items: start;
+  width: 902px;
+}
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--main);
+  width: 100%;
+}
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+.reviewLocation {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: start;
+  align-items: center;
+  line-height: 1.5;
+  text-decoration-skip-ink: none;
+  width: 100%;
+}
+.reviewWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.location svg {
+  width: 16px;
+  height: 16px;
+}
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+}
+.imageList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 902px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.image {
+  border-radius: 10px;
+  width: 290px;
+  height: 310px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.description {
+  color: var(--text);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 7px;
+  height: 264px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  overflow-y: hidden;
+}

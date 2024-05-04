@@ -1,0 +1,20 @@
+.card {
+  border-radius: 100px;
+  padding: 12px 18px;
+  width: fit-content;
+  height: 44px;
+  background: var(--block-features);
+  mix-blend-mode: multiply;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.card svg {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,38 @@
+.tabs {
+  width: 902px;
+  height: auto;
+  min-height: 48px;
+  background: var(--white);
+  color: var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+  margin-top: 44px;
+}
+.nav {
+  width: 902px;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 40px;
+  height: 48px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+  border-bottom: 1px solid rgba(16, 24, 40, 0.2);
+  padding-bottom: 24px;
+}
+.nav li {
+  padding-bottom: 24px;
+  cursor: pointer;
+}
+
+.nav li:hover,
+.nav li.active,
+.nav li.focus {
+  border-bottom: 5px solid var(--button);
+}

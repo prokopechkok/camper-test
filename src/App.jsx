@@ -1,29 +1,33 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
-// import FirstPage from 'pages/FirstPage/FirstPage';
-// import SecondPage from 'pages/SecondPage/SecondPage';
-// import HalfPage from 'pages/HalfPage/HalfPage';
-// import ErrorPage from 'pages/ErrorPage/ErrorPage';
-import CatalogPage from './pages/CatalogPage/CatalogPage';
-import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
-import s from './App.module.css';
-import { HomePage } from './pages';
 
-const test = import.meta.env.VITE_API_TEST;
+import { HomePage, CatalogPage, FavoritesPage } from './pages';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchAdverts } from './redux/adverts/advertsOperations';
+import { selectIsLoading } from './redux/adverts/advertsSelectors';
+import Loader from './components/Loader/Loader';
 
 function App() {
-  console.log(test);
-  return (
-    <div className={s.appWrapper}>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="/catalog" element={<CatalogPage />} />
-          <Route path="/favorites" element={<FavoritesPage />} />
-          <Route path="*" element={<Navigate to={'/'} />} />
-        </Route>
-      </Routes>
-    </div>
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchAdverts());
+  }, [dispatch]);
+
+  const isLoading = useSelector(selectIsLoading);
+
+  return isLoading ? (
+    <Loader />
+  ) : (
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path="*" element={<Navigate to={'/'} />} />
+      </Route>
+    </Routes>
   );
 }
 export default App;

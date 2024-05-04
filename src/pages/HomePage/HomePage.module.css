@@ -1,0 +1,124 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 64px;
+}
+
+.link {
+  padding: 8px 16px;
+  color: var(--button);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+
+  transition: color 0.3s;
+}
+.link:hover,
+.link:focus {
+  color: var(--main);
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.hero h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.25;
+}
+.hero p {
+  text-align: justify;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--text);
+}
+.searchBtn {
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: fit-content;
+  height: auto;
+  background: var(--button);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  margin-top: 34px;
+  margin-bottom: 64px;
+  border: none;
+}
+.searchBtn:hover,
+.searchBtn:focus {
+  background: #d84343;
+}
+
+.advantages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 36px;
+}
+.advantagesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+.text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.25;
+  color: var(--button);
+  padding: 20px;
+  text-align: center;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image1 {
+  background-image: url(https://ftp.goit.study/img/campers-test-task/8-1.webp);
+  border-radius: 10px;
+  width: 750px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image2 {
+  background-image: url(https://ftp.goit.study/img/campers-test-task/1-1.webp);
+  border-radius: 10px;
+  width: 750px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image3 {
+  background-image: url(https://ftp.goit.study/img/campers-test-task/2-1.webp);
+  border-radius: 10px;
+  width: 750px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

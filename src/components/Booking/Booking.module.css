@@ -1,0 +1,73 @@
+.container {
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+  padding: 24px;
+  width: 448px;
+  height: 532px;
+}
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.form input {
+  border-radius: 10px;
+  padding: 18px;
+  width: 400px;
+  height: 56px;
+  background: var(--inputs);
+  border: none;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(16, 24, 40, 0.6);
+}
+.form textarea {
+  border-radius: 10px;
+  padding: 18px;
+  padding-bottom: 76px;
+  width: 400px;
+  height: 114px;
+  background: var(--inputs);
+  border: none;
+  resize: none;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+}
+
+.sendBtn {
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: 160px;
+  height: 56px;
+  background: var(--button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  margin-top: 24px;
+}
+.sendBtn:hover,
+.sendBtn:focus {
+  background: #d84343;
+}
