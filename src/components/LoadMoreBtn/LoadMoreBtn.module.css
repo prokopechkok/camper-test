@@ -9,8 +9,6 @@
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: var(--main);
-  /* margin: 0 auto; */
-  /* margin-top: 50px; */
 }
 .loadMoreBtn:hover,
 .loadMoreBtn:focus {

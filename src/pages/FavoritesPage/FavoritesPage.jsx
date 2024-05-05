@@ -1,8 +1,7 @@
-import s from './FavoritesPage.module.css';
-
 import { useState } from 'react';
 import AdvertsList from '../../components/AdvertsList/AdvertsList';
 import LoadMoreBtn from '../../components/LoadMoreBtn/LoadMoreBtn';
+import s from './FavoritesPage.module.css';
 
 const FavoritesPage = () => {
   const initialPageSize = 4;

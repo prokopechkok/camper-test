@@ -56,7 +56,7 @@ const AdvertCard = ({ advert }) => {
 
       localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
     }
-  }, [isFavorite]);
+  }, [advert, id, isFavorite]);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);

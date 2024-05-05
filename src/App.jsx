@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
-
 import { HomePage, CatalogPage, FavoritesPage } from './pages';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';

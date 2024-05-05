@@ -1,7 +1,6 @@
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  /* height: 1834px; */
   padding: 100px 64px;
   display: flex;
   flex-direction: row;
@@ -48,7 +47,6 @@
   font-size: 16px;
   line-height: 1.25;
   color: rgba(16, 24, 40, 0.6);
-  /* margin-left: 44px; */
 }
 .iconWrapper {
   position: relative;
@@ -86,7 +84,6 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  /* display: block; */
   width: 100%;
   color: var(--main);
   padding-bottom: 24px;
@@ -126,28 +123,24 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  /* font-family: var(--font-family); */
   font-weight: 500;
-  /* font-size: 16px; */
   line-height: 1.25;
   text-align: center;
-  /* color: var(--main); */
-  position: absolute; /* абсолютне позиціонування для тексту */
-  top: 50%; /* розташування тексту вгорі */
-  left: 50%; /* розташування тексту по центру */
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .label svg {
-  /* розмір іконки */
-  fill: var(--main); /* колір іконки */
+  fill: var(--main);
 }
 .checkboxSvg {
   width: 32px;
   height: 32px;
 }
 .radioSvg {
-  width: 40px; /* розмір іконки */
+  width: 40px;
   height: 28px;
 }
 

@@ -26,8 +26,6 @@
   width: 430px;
   display: flex;
   flex-direction: column;
-  /* gap: 48px; */
-
   justify-content: start;
   align-items: start;
 }

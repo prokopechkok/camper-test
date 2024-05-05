@@ -20,7 +20,6 @@ const Features = ({ advert }) => {
     height,
     tank,
     consumption,
-
     details,
     engine,
     transmission,

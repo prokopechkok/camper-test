@@ -1,6 +1,6 @@
-import s from './Booking.module.css';
 import * as Yup from 'yup';
 import { Field, Form, Formik } from 'formik';
+import s from './Booking.module.css';
 
 const Booking = () => {
   const validationSchema = Yup.object().shape({

@@ -3,7 +3,6 @@
   max-width: 1440px;
   width: 1440px;
   padding: 40px 64px 0 64px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,9 +38,7 @@
   font-size: 24px;
   line-height: 1.25;
 
-  transition:
-    color 0.3s,
-    text-shadow 0.3s;
+  transition: color 0.3s;
 }
 .link:hover,
 .link:focus {

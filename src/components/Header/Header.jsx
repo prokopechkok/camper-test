@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import s from './Header.module.css';
 import VanIcon from '../../assets/icons/VanIcon';
+import s from './Header.module.css';
 
 export const Header = () => {
   return (
