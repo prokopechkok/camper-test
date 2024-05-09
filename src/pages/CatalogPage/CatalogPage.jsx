@@ -47,13 +47,16 @@ const CatalogPage = () => {
           trueValues.push(key);
         }
       }
+      if (advert.transmission === 'automatic') {
+        trueValues.push('automatic');
+      }
 
       if (
         location &&
         !advert.location
           .toLowerCase()
-          .split(',')
-          .includes(location.toLowerCase())
+          .split(', ')
+          .includes(location.toLowerCase().trim())
       ) {
         return false;
       }
@@ -62,10 +65,9 @@ const CatalogPage = () => {
           return false;
         }
       }
-      if (type && type.value && advert.form !== type.value) {
+      if (type && advert.form !== type) {
         return false;
       }
-
       return true;
     });
 
@@ -94,7 +96,6 @@ const CatalogPage = () => {
     // resetForm,
     setValues,
   } = formik;
-
   useEffect(() => {
     setValues(filters);
   }, [filters, setValues]);

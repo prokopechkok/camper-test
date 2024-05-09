@@ -63,7 +63,7 @@ const AdvertCard = ({ advert }) => {
   };
 
   return (
-    <div className={s.card}>
+    <li className={s.card}>
       <div
         className={s.image}
         style={{ backgroundImage: `url(${gallery[0]})` }}
@@ -138,7 +138,7 @@ const AdvertCard = ({ advert }) => {
           advert={advert}
         />
       </div>
-    </div>
+    </li>
   );
 };
 
